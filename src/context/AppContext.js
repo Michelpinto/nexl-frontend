@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from 'react';
+import { createContext } from 'react';
 import { useQuery, gql } from '@apollo/client';
 
 const launches_query_past = gql`
@@ -10,11 +10,11 @@ const launches_query_past = gql`
       launch_date_local
     }
     launchNext(offset: 0) {
-        mission_name
-        id
-        details
-        launch_date_local
-      }
+      mission_name
+      id
+      details
+      launch_date_local
+    }
   }
 `;
 

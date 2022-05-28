@@ -1,5 +1,6 @@
 .App {
     margin: auto;
+    padding-top: 60px;
 }
 
 @media screen and (min-width: 700px) {
@@ -9,3 +10,34 @@
         max-width: 700px;
     }
   }
+
+  .Header {
+      margin-bottom: 60px;
+  }
+
+  .launches {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .link {
+      border: 1px solid #1d1d1d;
+      padding: 20px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .mission-name {
+      font-weight: 400;
+  }
+
+  /* Launch page styles */
+.latest-launch-div {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.date {
+    font-weight: 400;
+    color: #bebebe;
+}

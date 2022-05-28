@@ -10,7 +10,7 @@ function App() {
     <AppProvider>
       <Router>
         <div className='App'>
-          <h1>SpaceX launches</h1>
+          <h1 className='Header'>SpaceX launches 🚀</h1>
 
           <Routes>
             <Route path='/' element={<Homepage />} />

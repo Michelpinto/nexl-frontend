@@ -1,25 +1,24 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 import { Link } from 'react-router-dom';
+import '../App.css';
 
 function LastLaunch() {
   const [data, loading] = useContext(AppContext);
 
   return (
     <div>
-      <div>
-        <Link to='/'>
-          <h1>homepage</h1>
-        </Link>
-        <h1>Latest launch</h1>
-      </div>
+      <Link to='/'>
+        <h3>back to Homepage</h3>
+      </Link>
 
       {!loading && (
-        <div>
-          <h1>{data.launchLatest.mission_name}</h1>
-          <h2>
+        <div className='latest-launch-div'>
+          <h1>Last rocket launch</h1>
+          <h1 className='mission-name'>{data.launchLatest.mission_name}</h1>
+          <h3 className='date'>
             {new Date(data.launchLatest.launch_date_local).toDateString()}
-          </h2>
+          </h3>
           <p>
             {data.launchLatest.details
               ? null
