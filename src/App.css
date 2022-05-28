@@ -6,7 +6,6 @@
 @media screen and (min-width: 700px) {
     .App {
         margin: auto;
-    
         max-width: 700px;
     }
   }
@@ -41,3 +40,15 @@
     font-weight: 400;
     color: #bebebe;
 }
+
+@media screen and (max-width: 750px) {
+    .App {
+        margin: 30px;
+    }
+
+    .launches {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+  }
